@@ -1,92 +1,111 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9; /* Light background for the whole page */
+    color: #333;
 }
 
-header {
+/* Hero Section */
+.hero {
+    background: #0073e6; /* Custom hero background color */
+    color: white;
     text-align: center;
-    background: #f4f4f4;
-    padding: 20px;
 }
 
-header h1 {
-    margin: 0;
+.hero h1 {
     font-size: 2.5em;
+    font-weight: bold;
 }
 
-header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
+.hero h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
 }
 
-#introduction {
-    text-align: center;
-    padding: 20px;
-    background: #ffffff;
-}
-
-#introduction .profile-pic {
-    width: 150px;
+.hero .image.is-128x128 img {
+    width: 150px; /* Profile picture size */
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin: 20px auto;
+    border: 3px solid white;
 }
 
-#introduction .cv-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #0073e6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+/* Research Project and In-Class Research Sections */
+section {
+    padding: 40px 20px;
 }
 
-#introduction .cv-link:hover {
-    background: #005bb5;
+h1.title {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
 }
 
-#research-papers {
+hr {
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid #ddd;
+    width: 80%;
+}
+
+/* Tiles for Projects */
+.tile.is-child.notification {
+    background-color: #ffffff; /* Tile background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
-    background: #f9f9f9;
-}
-
-#research-papers h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Tiles for projects */
-.tile.is-child.notification {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tile.is-child.notification:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .tile.is-child.notification a {
     text-decoration: none;
     color: #0073e6;
+    font-weight: bold;
 }
 
 .tile.is-child.notification a:hover {
     color: #005bb5;
 }
 
+/* Contact Section */
+.level-item .icon {
+    color: #0073e6; /* Icon color */
+    transition: color 0.2s ease;
+}
+
+.level-item .icon:hover {
+    color: #005bb5; /* Darker blue on hover */
+}
+
+.level-item .heading a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.level-item .heading a:hover {
+    text-decoration: underline;
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #333;
     color: white;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
 }
