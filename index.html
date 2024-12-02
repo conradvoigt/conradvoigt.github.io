@@ -6,6 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .hero .image.is-128x128 img {
+      width: 150px; /* Increased size */
+      height: 150px;
+    }
+    .tile.is-child.notification {
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .tile.is-child.notification:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .tile.is-child.notification a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+    .tile.is-child.notification a:hover {
+      color: #005bb5;
+    }
+  </style>
 </head>
 
 <body>
@@ -23,7 +48,7 @@
         <div class="columns has-text-centered">
           <div class="column">
             <h1 class="title is-1">Conrad Voigt</h1>
-            <h2 class="subtitle">Quantitative Researcher</h2>
+            <h2 class="subtitle">Undergraduate Researcher and PhD Applicant</h2>
             <p>
               <a href="Conrad Voigt CV1.pdf" class="icon has-text-light" target="_blank">
                 <i class="fas fa-file-alt"></i> <strong>CV</strong>
@@ -43,59 +68,31 @@
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <!-- Project 1 -->
-          <div class="tile is-parent" id="project1">
+          <div class="tile is-parent">
             <article class="tile is-child notification">
-              <p class="title">Logistic Regression-Based Systematic Trading</p>
-              <figure class="image is-3by3">
-                <a href="Logistic Regression-Based Systematic Trading.pdf" target="_blank">
-                  <img src="path/to/Logistic Regression-Based Systematic Trading-thumbnail.png" alt="Project Thumbnail">
-                </a>
-              </figure>
+              <p class="title">Logistic Regression Based Trading on the S&P 500</p>
+              <p><a href="Logistic Regression Based Trading on the S&P 500.pdf" target="_blank">View PDF</a></p>
             </article>
           </div>
           <!-- Project 2 -->
-          <div class="tile is-parent" id="project2">
+          <div class="tile is-parent">
             <article class="tile is-child notification">
-              <p class="title">Cost Functions for Blockchain-Based Prediction Markets</p>
-              <figure class="image is-3by3">
-                <a href="Cost Functions for Blockchain-Based Prediction Markets.pdf" target="_blank">
-                  <img src="path/to/Cost Functions-thumbnail.png" alt="Project Thumbnail">
-                </a>
-              </figure>
+              <p class="title">Modeling and Optimizing Binary Prediction</p>
+              <p><a href="Modeling and Optimizing Binary Prediction.pdf" target="_blank">View PDF</a></p>
             </article>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Other In-Class Research Section -->
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Other In-Class Research</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <!-- Report 1 -->
-          <div class="tile is-parent" id="report1">
+          <!-- Project 3 -->
+          <div class="tile is-parent">
             <article class="tile is-child notification">
-              <p class="title">CSWI Stock Report</p>
-              <figure class="image is-3by3">
-                <a href="CSWI Stock Report.pdf" target="_blank">
-                  <img src="path/to/CSWI Stock Report-thumbnail.png" alt="Report Thumbnail">
-                </a>
-              </figure>
+              <p class="title">The Effect of EPL on Unemployment</p>
+              <p><a href="The Effect of EPL on Unemployment.pdf" target="_blank">View PDF</a></p>
             </article>
           </div>
-          <!-- Report 2 -->
-          <div class="tile is-parent" id="report2">
+          <!-- Project 4 -->
+          <div class="tile is-parent">
             <article class="tile is-child notification">
-              <p class="title">Mergesort Performance Analysis</p>
-              <figure class="image is-3by3">
-                <a href="Mergesort Performance Analysis.pdf" target="_blank">
-                  <img src="path/to/Mergesort Performance Analysis-thumbnail.png" alt="Report Thumbnail">
-                </a>
-              </figure>
+              <p class="title">Factors Impacting Enrollment in Higher Education</p>
+              <p><a href="Factors Impacting Enrollment in Higher Education.pdf" target="_blank">View PDF</a></p>
             </article>
           </div>
         </div>
@@ -109,14 +106,6 @@
       <h1 class="title">Contact</h1>
       <hr />
       <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://github.com/conradvoigt" class="icon is-large">
-              <i class="fab fa-2x fa-github"></i>
-            </a>
-            <p class="heading"><a href="https://github.com/conradvoigt">GitHub</a></p>
-          </div>
-        </div>
         <div class="level-item has-text-centered">
           <div>
             <a href="mailto:cvoigt@stetson.edu" class="icon is-large">
