@@ -26,10 +26,11 @@ body {
 }
 
 .hero .image.is-128x128 img {
-  width: auto; /* Auto width to maintain aspect ratio */
-  height: 150px; /* Height remains fixed */
-  border-radius: 50%; /* Ensures the image stays circular */
-  object-fit: cover; /* Ensures proper cropping within the circular frame */
+  width: 200px; /* Increased size for a bigger image */
+  height: 200px; /* Match height to width for a perfect circle */
+  border-radius: 50%; /* Ensures the image remains circular */
+  object-fit: cover; /* Proper cropping without distortion */
+  object-position: center; /* Centers the focal point */
 }
 
 /* Research Project and In-Class Research Sections */
