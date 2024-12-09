@@ -26,12 +26,13 @@ body {
 }
 
 .hero .image.is-128x128 img {
-  width: 200px; /* Increased size for a bigger image */
-  height: 200px; /* Match height to width for a perfect circle */
-  border-radius: 50%; /* Ensures the image remains circular */
-  object-fit: cover; /* Proper cropping without distortion */
-  object-position: center; /* Centers the focal point */
+  width: auto; /* Automatically adjust width based on height */
+  height: 200px; /* Set a fixed height */
+  object-fit: contain; /* Ensure the entire image fits within the frame without cropping */
+  object-position: center; /* Center the image within its container */
+  border-radius: 0; /* Remove the circular border */
 }
+
 
 /* Research Project and In-Class Research Sections */
 section {
