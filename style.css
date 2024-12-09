@@ -26,11 +26,10 @@ body {
 }
 
 .hero .image.is-128x128 img {
-    width: 150px; /* Profile picture size */
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
-    border: 3px solid white;
+  width: auto; /* Auto width to maintain aspect ratio */
+  height: 150px; /* Height remains fixed */
+  border-radius: 50%; /* Ensures the image stays circular */
+  object-fit: cover; /* Ensures proper cropping within the circular frame */
 }
 
 /* Research Project and In-Class Research Sections */
