@@ -2,191 +2,176 @@
 <html lang="en">
 
 <head>
-  <title>Conrad Voigt</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    .hero .image.is-128x128 img {
-      width: 150px; /* Increased size */
-      height: 150px;
-    }
-    .tile.is-child.notification {
-      background-color: #f4f4f4;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-    .tile.is-child.notification:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .tile.is-child.notification a {
-      text-decoration: none;
-      color: #0073e6;
-    }
-    .tile.is-child.notification a:hover {
-      color: #005bb5;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conrad Voigt | Portfolio</title>
+    
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for a clean, modern typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Applying the Inter font to the whole page */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A light gray background */
+        }
+        /* Custom gradient for the hero section */
+        .hero-gradient {
+            background: #1e3a8a; /* A deep blue */
+        }
+        /* Style for project cards */
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
 
-<body>
-  <!-- Hero Section -->
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <div class="level">
-          <div class="level-item has-text-centered">
-            <figure class="image is-128x128">
-              <img class="is-rounded" src="myfoto.JPG" alt="Conrad Voigt">
-            </figure>
-          </div>
-        </div>
-        <div class="columns has-text-centered">
-          <div class="column">
-            <h1 class="title is-1">Conrad Voigt</h1>
-            <h2 class="subtitle">PhD Candidate in Statistics and Financial Mathematics at UC Santa Barbara</h2>
-            <p>
-              <a href="Conrad Voigt CV1.pdf" class="icon has-text-light" target="_blank">
-                <i class="fas fa-file-alt"></i> <strong>CV</strong>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<body class="text-slate-700">
 
-<!-- significant Research Section -->
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Research Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-      <!-- Project 1 -->
-      <div class="tile is-parent">
-        <article class="tile is-child notification">
-          <p class="title">Predicting Prediction Markets: A Beta-Hidden Markov Modeling Approach</p>
-          <p><a href="BetaHMMpolymarket-18-1.pdf" target="_blank">View PDF</a></p>
-        </article>
-      </div>
-      <!-- Project 2 -->
-      <div class="tile is-parent">
-        <article class="tile is-child notification">
-          <p class="title">CFA Research Competition: HEICO Stock Report</p>
-          <p><a href="CFA Research Challenge HEICO.pdf" target="_blank">View PDF</a></p>
-        </article>
-      </div>
-      <!-- Project 3 -->
-      <div class="tile is-parent">
-        <article class="tile is-child notification">
-          <p class="title">Enhancing the Efficiency of Ant Colony Optimization</p>
-          <p><a href="Improvements_on_the_ACO.pdf" target="_blank">View PDF</a></p>
-        </article>
-      </div>
-      <!-- Project 4 -->
-      <div class="tile is-parent">
-        <article class="tile is-child notification">
-          <p class="title">Logistic Regression Based Trading on the S&P 500</p>
-          <p><a href="Logistic Regression Based Trading on the S&P 500.pdf" target="_blank">View PDF</a></p>
-        </article>
-      </div>
-      <!-- Project 5 -->
-      <div class="tile is-parent">
-        <article class="tile is-child notification">
-          <p class="title">The Effect of EPL on Unemployment</p>
-          <p><a href="The Effect of EPL on Unemployment.pdf" target="_blank">View PDF</a></p>
-        </article>
-      </div>
-      <!-- Project 6 -->
-      <div class="tile is-parent">
-        <article class="tile is-child notification">
-          <p class="title">Factors Impacting Enrollment in Higher Education</p>
-          <p><a href="Factors Impacting Enrollment in Higher Education.pdf" target="_blank">View PDF</a></p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white shadow-lg">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <!-- Profile Image -->
+            <div class="w-40 h-40 mx-auto mb-6">
+                <!-- The 'object-cover' class fixes the squished image issue -->
+                <img class="rounded-full w-full h-full object-cover border-4 border-blue-300 shadow-xl" 
+                     src="myfoto.JPG" 
+                     alt="Conrad Voigt"
+                     onerror="this.onerror=null;this.src='https://placehold.co/150x150/E2E8F0/475569?text=CV';">
+            </div>
+            
+            <!-- Name and Title -->
+            <h1 class="text-5xl font-extrabold">Conrad Voigt</h1>
+            <h2 class="text-2xl font-light mt-2 text-blue-200">Graduate Researcher in Statistics and Financial Mathematics at UC Santa Barbara</h2>
+            
+            <!-- CV Link -->
+            <div class="mt-8">
+                <a href="Conrad Voigt CV1.pdf" target="_blank" class="inline-block bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300">
+                    <i class="fas fa-file-alt mr-2"></i> View CV
+                </a>
+            </div>
+        </div>
+    </header>
 
-  <!-- In-Class Research Section -->
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Other Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <!-- Report 1 -->
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <p class="title">CSWI Stock Report</p>
-              <p><a href="CSWI Stock Report.pdf" target="_blank">View PDF</a></p>
-            </article>
-          </div>
-          <!-- Report 2 -->
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <p class="title">Mergesort Performance Analysis</p>
-              <p><a href="Mergesort Performance Analysis.pdf" target="_blank">View PDF</a></p>
-            </article>
-          </div>
-          <!-- Report 3 -->
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <p class="title">O Stock Report</p>
-              <p><a href="ConradVoigt_O_BUY.pdf" target="_blank">View PDF</a></p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-6 py-12">
 
-  <!-- Contact Section -->
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Contact</h1>
-      <hr />
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://github.com/conradvoigt" class="icon is-large">
-              <i class="fab fa-2x fa-github"></i>
-            </a>
-            <p class="heading"><a href="https://github.com/conradvoigt">GitHub</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="mailto:conradvoigt@ucsb.edu" class="icon is-large">
-              <i class="fas fa-2x fa-envelope"></i>
-            </a>
-            <p class="heading"><a href="mailto:conradvoigt@ucsb.edu">Email</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://linkedin.com/in/conrad-voigt/" class="icon is-large">
-              <i class="fab fa-2x fa-linkedin"></i>
-            </a>
-            <p class="heading"><a href="https://linkedin.com/in/conrad-voigt/">LinkedIn</a></p>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
+        <!-- Research Projects Section -->
+        <section id="research">
+            <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Research Projects</h2>
+            <!-- Grid for Project Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">Predicting Prediction Markets: A Beta-Hidden Markov Modeling Approach</h3>
+                    <a href="BetaHMMpolymarket-18-1.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>© 2025 Conrad Voigt</p>
-    </div>
-  </footer>
+                <!-- Project 2 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">CFA Research Competition: HEICO Stock Report</h3>
+                    <a href="CFA Research Challenge HEICO.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">Enhancing the Efficiency of Ant Colony Optimization</h3>
+                    <a href="Improvements_on_the_ACO.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+                
+                <!-- Project 4 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">Logistic Regression Based Trading on the S&P 500</h3>
+                    <a href="Logistic Regression Based Trading on the S&P 500.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">The Effect of EPL on Unemployment</h3>
+                    <a href="The Effect of EPL on Unemployment.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">Factors Impacting Enrollment in Higher Education</h3>
+                    <a href="Factors Impacting Enrollment in Higher Education.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Other Projects Section -->
+        <section id="other-projects" class="mt-20">
+            <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Other Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Report 1 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">CSWI Stock Report</h3>
+                    <a href="CSWI Stock Report.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+                <!-- Report 2 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">Mergesort Performance Analysis</h3>
+                    <a href="Mergesort Performance Analysis.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+                <!-- Report 3 -->
+                <article class="project-card bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 flex-grow">O Stock Report</h3>
+                    <a href="ConradVoigt_O_BUY.pdf" target="_blank" class="mt-4 self-start text-blue-600 hover:text-blue-800 font-semibold">View PDF <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-slate-100 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-slate-800">Contact Me</h2>
+            <div class="flex justify-center items-center space-x-8 md:space-x-12">
+                
+                <a href="https://github.com/conradvoigt" target="_blank" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fab fa-github fa-3x"></i>
+                    <p class="mt-2 text-sm font-medium">GitHub</p>
+                </a>
+                
+                <a href="mailto:conradvoigt@ucsb.edu" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-envelope fa-3x"></i>
+                    <p class="mt-2 text-sm font-medium">Email</p>
+                </a>
+                
+                <a href="https://linkedin.com/in/conrad-voigt/" target="_blank" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                    <p class="mt-2 text-sm font-medium">LinkedIn</p>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Conrad Voigt. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
